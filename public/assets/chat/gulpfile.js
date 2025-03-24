@@ -59,7 +59,7 @@ function no_jquery(cb) {
     .pipe(order([
       "views/*.js",
       "purify.min.js",
-      "chat.js",
+      "chat-no-jquery.js",
     ], {base: './'}))
     .pipe(concat('chat-no-jquery.js'))
     .pipe(gulp.dest('./'))
